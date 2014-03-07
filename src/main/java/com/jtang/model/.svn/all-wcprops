@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/fgroup/!svn/ver/39/platform/src/main/java/com/jtang/model
+END
+Product.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/fgroup/!svn/ver/38/platform/src/main/java/com/jtang/model/Product.java
+END
+Rawmaterial.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/fgroup/!svn/ver/62/platform/src/main/java/com/jtang/model/Rawmaterial.java
+END
+Storage.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/fgroup/!svn/ver/39/platform/src/main/java/com/jtang/model/Storage.java
+END
+User.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/fgroup/!svn/ver/37/platform/src/main/java/com/jtang/model/User.java
+END
+Sensor.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/fgroup/!svn/ver/37/platform/src/main/java/com/jtang/model/Sensor.java
+END
+InOut.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/fgroup/!svn/ver/33/platform/src/main/java/com/jtang/model/InOut.java
+END
+ProductQuery.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/fgroup/!svn/ver/62/platform/src/main/java/com/jtang/model/ProductQuery.java
+END
+TransRecord.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/fgroup/!svn/ver/62/platform/src/main/java/com/jtang/model/TransRecord.java
+END
+Temperature.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/fgroup/!svn/ver/28/platform/src/main/java/com/jtang/model/Temperature.java
+END
+Pro_Trace.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/fgroup/!svn/ver/62/platform/src/main/java/com/jtang/model/Pro_Trace.java
+END
+StoreRecord.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/fgroup/!svn/ver/62/platform/src/main/java/com/jtang/model/StoreRecord.java
+END

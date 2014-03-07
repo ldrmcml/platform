@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/fgroup/!svn/ver/60/platform/src/main/java/com/jtang/controller
+END
+SensorManagerC.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/fgroup/!svn/ver/37/platform/src/main/java/com/jtang/controller/SensorManagerC.java
+END
+DashboardController.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/fgroup/!svn/ver/38/platform/src/main/java/com/jtang/controller/DashboardController.java
+END
+RealTimeDataC.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/fgroup/!svn/ver/32/platform/src/main/java/com/jtang/controller/RealTimeDataC.java
+END
+ExceptionDataC.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/fgroup/!svn/ver/39/platform/src/main/java/com/jtang/controller/ExceptionDataC.java
+END
+AddSensorC.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/fgroup/!svn/ver/37/platform/src/main/java/com/jtang/controller/AddSensorC.java
+END
+ControllerParent.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/fgroup/!svn/ver/39/platform/src/main/java/com/jtang/controller/ControllerParent.java
+END
+LoginController.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/fgroup/!svn/ver/34/platform/src/main/java/com/jtang/controller/LoginController.java
+END
+HistoryDataC.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/fgroup/!svn/ver/39/platform/src/main/java/com/jtang/controller/HistoryDataC.java
+END
+ErrorController.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/fgroup/!svn/ver/27/platform/src/main/java/com/jtang/controller/ErrorController.java
+END
+WarahouseStatictisInOutC.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/fgroup/!svn/ver/60/platform/src/main/java/com/jtang/controller/WarahouseStatictisInOutC.java
+END
+UpdateSensorC.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/fgroup/!svn/ver/37/platform/src/main/java/com/jtang/controller/UpdateSensorC.java
+END
+DeleteSensorC.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/fgroup/!svn/ver/28/platform/src/main/java/com/jtang/controller/DeleteSensorC.java
+END
+WarahouseInOutController.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/fgroup/!svn/ver/60/platform/src/main/java/com/jtang/controller/WarahouseInOutController.java
+END
+WarahouseSensorController.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/fgroup/!svn/ver/60/platform/src/main/java/com/jtang/controller/WarahouseSensorController.java
+END
+WarahouseProductC.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/fgroup/!svn/ver/60/platform/src/main/java/com/jtang/controller/WarahouseProductC.java
+END
+DataqueryController.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/fgroup/!svn/ver/62/platform/src/main/java/com/jtang/controller/DataqueryController.java
+END
+ResetSensorC.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/fgroup/!svn/ver/28/platform/src/main/java/com/jtang/controller/ResetSensorC.java
+END
+SensorDataCenter.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/fgroup/!svn/ver/32/platform/src/main/java/com/jtang/controller/SensorDataCenter.java
+END
+DatarecordController.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/fgroup/!svn/ver/62/platform/src/main/java/com/jtang/controller/DatarecordController.java
+END
+WarahouseAddInOutC.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/fgroup/!svn/ver/38/platform/src/main/java/com/jtang/controller/WarahouseAddInOutC.java
+END
+StorageManagerC.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/fgroup/!svn/ver/39/platform/src/main/java/com/jtang/controller/StorageManagerC.java
+END

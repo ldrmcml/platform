@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Bean头部 -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:util="http://www.springframework.org/schema/util"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd  
+            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd  
+            http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd              
+            http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+    
+    
+    <bean id="urlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping"> 
+       <property name="mappings"> 
+  			<props> 
+   				<prop key="/hello">fController</prop> 
+   				<prop key="/login">login</prop> 
+   				<prop key="/dashboard">dashboard</prop>
+   				<prop key="/error_404">error</prop>
+   				<prop key="/warahouse/in">warahouse_inout</prop>
+   				<prop key="/warahouse/out">warahouse_inout</prop>
+   				<prop key="/warahouse/product">warahouseProduct</prop>
+   				<prop key="/warahouse/addInout">warahouseAddInOutC</prop>
+   				<prop key="/warahouse/statictisInOut">warahouseStatictisInOutC</prop>
+   				<prop key="/warahouse/reader">warahouse_sensor</prop>   				<prop key="/TempMonitor/sensorManager">sensorManagerC</prop>
+   				<prop key="/TempMonitor/sensorManager">sensorManagerC</prop>
+   				<prop key="/TempMonitor/storageManager">storageManagerC</prop>
+   				<prop key="/TempMonitor/realTimeData">realTimeDataC</prop>
+   				<prop key="/TempMonitor/historyData">historyDataC</prop>
+   				<prop key="/TempMonitor/exceptionData">exceptionDataC</prop>
+   				<prop key="/deleteSensor">deleteSensorC</prop>
+   				<prop key="/TempMonitor/addSensor">addSensorC</prop>
+   				<prop key="/TempMonitor/updateSensor">updateSensorC</prop>
+   				<prop key="/resetSensor">resetSensorC</prop>
+   				<prop key="/Traceability/datarecord">datarecord</prop>
+   				<prop key="/Traceability/dataquery">dataquery</prop>
+   				<prop key="/storageManager">storageManagerC</prop>
+  			</props> 
+		</property> 
+	</bean> 
+    
+    
+    <!--模板引擎的配置-->
+	<bean id="viewResolver" class="org.springframework.web.servlet.view.velocity.VelocityViewResolver">
+        <property name="prefix"><value>/WEB-INF/view/</value></property>
+        <property name="suffix"> <value>.vm</value></property>
+        <property name="contentType" value="text/html;charset=UTF-8" />
+        <property name="requestContextAttribute" value="request"/>
+
+    </bean>
+    
+</beans>

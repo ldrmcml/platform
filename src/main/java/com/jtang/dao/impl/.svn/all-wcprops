@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/fgroup/!svn/ver/60/platform/src/main/java/com/jtang/dao/impl
+END
+ProManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/fgroup/!svn/ver/60/platform/src/main/java/com/jtang/dao/impl/ProManagerImpl.java
+END
+ProductManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/fgroup/!svn/ver/62/platform/src/main/java/com/jtang/dao/impl/ProductManagerImpl.java
+END
+RawmaterialManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/fgroup/!svn/ver/62/platform/src/main/java/com/jtang/dao/impl/RawmaterialManagerImpl.java
+END
+StoreRecordManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/fgroup/!svn/ver/62/platform/src/main/java/com/jtang/dao/impl/StoreRecordManagerImpl.java
+END
+TempManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/fgroup/!svn/ver/39/platform/src/main/java/com/jtang/dao/impl/TempManagerImpl.java
+END
+InOutManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/fgroup/!svn/ver/38/platform/src/main/java/com/jtang/dao/impl/InOutManagerImpl.java
+END
+ProductQueryManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/fgroup/!svn/ver/62/platform/src/main/java/com/jtang/dao/impl/ProductQueryManagerImpl.java
+END
+TransRecordManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/fgroup/!svn/ver/62/platform/src/main/java/com/jtang/dao/impl/TransRecordManagerImpl.java
+END
+SensorManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/fgroup/!svn/ver/37/platform/src/main/java/com/jtang/dao/impl/SensorManagerImpl.java
+END
+StorageManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/fgroup/!svn/ver/39/platform/src/main/java/com/jtang/dao/impl/StorageManagerImpl.java
+END
+UserManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/fgroup/!svn/ver/37/platform/src/main/java/com/jtang/dao/impl/UserManagerImpl.java
+END

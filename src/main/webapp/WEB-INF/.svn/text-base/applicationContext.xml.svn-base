@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<!--veloctity的配置信息-->
+	<bean id="velocityConfig" class="org.springframework.web.servlet.view.velocity.VelocityConfigurer">  
+        <property name="resourceLoaderPath">  
+            <value>/</value>  
+        </property>  
+        <property name="velocityProperties">  
+            <props>  
+                <prop key="input.encoding">utf-8</prop>  
+                <prop key="output.encoding">utf-8</prop>  
+                <prop key="contentType">text/html;charset=utf-8</prop>  
+            </props>  
+       </property>  
+    </bean>
+    <import resource="applicationContext-dataSource.xml" />
+
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+    <!-- 这里面配置传感器子项目的配置文件 -->
+    <!-- this for sensor data center -->
+    	<bean id="comRead" class="jt.sensordata.comread.ComRead">
+    		<property name="sensorService" ref="sensorService"></property>
+    		<property name="checkZigbee" ref="checkZigbee"></property>
+    		<property name="updateSensorWorkTime" ref="updateSensorWorkTime"></property>
+    		<property name="storeTemp" ref="storeTemp"></property>
+    	</bean>
+    	<bean id="startDataCenter" class="jt.sensordata.main.StartDataCenter">
+    		<property name="comRead" ref="comRead"></property>
+    	</bean>
+    	
+    	<bean id="sensorManagerC" class="com.jtang.controller.SensorManagerC">
+    		<property name="sensorService" ref="sensorService"></property>
+    	</bean>
+    	<bean id="deleteSensorC" class="com.jtang.controller.DeleteSensorC">
+    		<property name="sensorService" ref="sensorService"></property>
+    	</bean>
+    	<bean id="resetSensorC" class="com.jtang.controller.ResetSensorC">
+    		<property name="sensorService" ref="sensorService"></property>
+    	</bean>
+    	<bean id="addSensorC" class="com.jtang.controller.AddSensorC">
+    		<property name="sensorService" ref="sensorService"></property>
+    	</bean>
+    	
+    	<bean id="updateSensorC" class="com.jtang.controller.UpdateSensorC">
+    		<property name="sensorService" ref="sensorService"></property>
+    	</bean>
+    	
+    	<bean id="sensorService" class="com.jtang.service.impl.SensorServiceImpl">
+    		<property name="sensorManager" ref="sensorManager"></property>
+    	</bean>
+    	<bean id="sensorManager" class="com.jtang.dao.impl.SensorManagerImpl" parent="abstractDao"></bean>
+    	
+    	<bean id="realTimeDataC" class="com.jtang.controller.RealTimeDataC">
+    	</bean>
+    	<bean id="historyDataC" class="com.jtang.controller.HistoryDataC">
+    		<property name="tempService" ref="tempService"></property>
+    		<property name="sensorService" ref="sensorService"></property>
+    	</bean>
+    	
+    	<bean id="exceptionDataC" class="com.jtang.controller.ExceptionDataC">
+    		<property name="tempService" ref="tempService"></property>
+    		<property name="sensorService" ref="sensorService"></property>
+    	</bean>
+    	
+    	<bean id="storageManagerC" class="com.jtang.controller.StorageManagerC">
+    		<property name="storageService" ref="storageService"></property>
+    		<property name="userService" ref="UserService"></property>
+    	</bean>
+    	
+    	<bean id="checkZigbee" class="com.jtang.servicethread.CheckZigbee">
+    		<property name="sensorService" ref="sensorService"></property>
+    	</bean>
+    	<bean id="updateSensorWorkTime" class="com.jtang.servicethread.UpdateSensorWorkTime">
+    		<property name="sensorService" ref="sensorService"></property>
+    	</bean>
+    	
+    	<bean id="tempManager" class="com.jtang.dao.impl.TempManagerImpl" parent="abstractDao"></bean>
+    	<bean id="tempService" class="com.jtang.service.impl.TempServiceImpl">
+    		<property name="tempManager" ref="tempManager"></property>
+    	</bean>
+    	
+    	<bean id="storageManager" class="com.jtang.dao.impl.StorageManagerImpl" parent="abstractDao"></bean>
+    	<bean id="storageService" class="com.jtang.service.impl.StorageServiceImpl">
+    		<property name="storageManager" ref="storageManager"></property>
+    	</bean>
+    	
+    	<bean id="storeTemp" class="com.jtang.servicethread.StoreTemp">
+    		<property name="tempService" ref="tempService"></property>
+    	</bean>
+    <!-- end -->
+    <!-- end -->
+    
+    
+    <!-- 首先定义抽象的abstractDao，其有一个jdbcTemplate属性，从而可以让继承的子类自动继承jdbcTemplate属性注入； -->
+    <bean id="abstractDao" abstract="true">
+        <property name="jdbcTemplate" ref="jdbcTemplate" />
+    </bean>
+    
+    
+    <bean id="fjs" class="controller.Fjs">
+    	<property name="name" value="fjsfjsfjsjfsjfjafjdasfdas" />
+    </bean>
+    
+    <bean id="fController" class="controller.FController">
+    	<property name="fjs" ref="fjs" />
+    </bean>
+    
+    <bean id="UserService" class="com.jtang.service.impl.UserServiceImpl">
+    	<property name="userManager" ref="userManager"></property>
+    </bean>
+    <bean id="userManager" class="com.jtang.dao.impl.UserManagerImpl" parent="abstractDao"></bean>
+    
+     <bean id="proService" class="com.jtang.service.impl.ProServiceImpl">
+    	<property name="proManager" ref="proManager"></property>
+    </bean>
+    <bean id="proManager" class="com.jtang.dao.impl.ProManagerImpl" parent="abstractDao"></bean>
+    
+    <bean id="login" class="com.jtang.controller.LoginController">
+    	<property name="userService" ref="UserService"></property>
+    </bean>
+    
+    <bean id="dashboard" class="com.jtang.controller.DashboardController">
+    	<property name="userService" ref="UserService"></property>
+    	<property name="storageService" ref="storageService"></property>
+    </bean>
+    <bean id="error" class="com.jtang.controller.ErrorController"></bean>
+    
+    <!-- 仓库管理bean -->
+    <bean id="warahouse_inout" class="com.jtang.controller.WarahouseInOutController">
+    	<property name="proService" ref="proService"></property>
+    	<property name="userService" ref="UserService"></property>
+    	
+    </bean>
+    <bean id="warahouseAddInOutC" class="com.jtang.controller.WarahouseAddInOutC">
+    	<property name="inoutService" ref="inoutService"></property>
+    	<property name="proService" ref="proService"></property>
+    	<property name="storageService" ref="storageService"></property>
+    </bean>
+    <bean id="warahouseStatictisInOutC" class="com.jtang.controller.WarahouseStatictisInOutC">
+    	<property name="inoutService" ref="inoutService"></property>
+    </bean>
+     <bean id="inoutService" class="com.jtang.service.impl.InOutServiceImpl" > 
+     	<property name="inoutManager" ref="inoutManager"></property>
+     </bean>
+    <bean id="inoutManager" class="com.jtang.dao.impl.InOutManagerImpl" parent="abstractDao"> </bean>
+    <bean id="warahouse_sensor" class="com.jtang.controller.WarahouseSensorController">
+    	<property name="rfidService" ref="RFIDService"></property>
+    </bean>
+    <bean id="warahouseProduct" class="com.jtang.controller.WarahouseProductC">
+    	<property name="proService" ref="proService"></property>
+    	<property name="storageService" ref="storageService"></property>
+    </bean>
+    
+    <!-- RFID service -->
+     <bean id="RFIDService" class="com.jtang.service.impl.RFIDServiceImpl"></bean>
+    <!-- 仓库bean -->
+    
+    <!-- 溯源管理bean -->
+    <bean id="datarecord" class="com.jtang.controller.DatarecordController">
+    	<property name="productService" ref="productService"></property>
+    	<property name="rawmaterialService" ref="rawmaterialService"></property>
+    	<property name="storeRecordService" ref="storeRecordService"></property>
+    	<property name="transRecordService" ref="transRecordService"></property>
+    </bean>
+    <bean id="dataquery" class="com.jtang.controller.DataqueryController">
+    	<property name="productService" ref="productService"></property>
+    	<property name="productQueryService" ref="productQueryService"></property>
+    </bean>
+    <bean id="productService" class="com.jtang.service.impl.ProductServiceImpl">
+    	<property name="productManager" ref="productManager"></property>
+    </bean>
+    <bean id="rawmaterialService" class="com.jtang.service.impl.RawmaterialServiceImpl">
+    	<property name="rawmaterialManager" ref="rawmaterialManager"></property>
+    </bean>
+    <bean id="storeRecordService" class="com.jtang.service.impl.StoreRecordServiceImpl">
+    	<property name="storeRecordManager" ref="storeRecordManager"></property>
+    </bean>
+    <bean id="transRecordService" class="com.jtang.service.impl.TransRecordServiceImpl">
+    	<property name="transRecordManager" ref="transRecordManager"></property>
+    </bean>
+    <bean id="productQueryService" class="com.jtang.service.impl.ProductQueryServiceImpl">
+    	<property name="productQueryManager" ref="productQueryManager"></property>
+    </bean>
+    <bean id="productManager" class="com.jtang.dao.impl.ProductManagerImpl" parent="abstractDao"></bean>
+    <bean id="rawmaterialManager" class="com.jtang.dao.impl.RawmaterialManagerImpl" parent="abstractDao"></bean>
+    <bean id="storeRecordManager" class="com.jtang.dao.impl.StoreRecordManagerImpl" parent="abstractDao"></bean>
+    <bean id="transRecordManager" class="com.jtang.dao.impl.TransRecordManagerImpl" parent="abstractDao"></bean>
+    <bean id="productQueryManager" class="com.jtang.dao.impl.ProductQueryManagerImpl" parent="abstractDao"></bean> 
+
+</beans>

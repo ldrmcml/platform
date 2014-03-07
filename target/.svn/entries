@@ -1,0 +1,37 @@
+10
+
+dir
+60
+https://192.168.2.50:8443/svn/fgroup/platform/target
+https://192.168.2.50:8443/svn/fgroup
+
+
+
+2013-10-31T11:56:47.954500Z
+31
+cml
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+bc230bbc-e496-734a-a5c6-26ff5e00b28c
+
+classes
+dir
+
+m2e-wtp
+dir
+
+test-classes
+dir
+

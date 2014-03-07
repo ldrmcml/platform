@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/fgroup/!svn/ver/60/platform/src/main/webapp/WEB-INF/view
+END
+in.vm
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/fgroup/!svn/ver/60/platform/src/main/webapp/WEB-INF/view/in.vm
+END
+dataquery.vm
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/fgroup/!svn/ver/62/platform/src/main/webapp/WEB-INF/view/dataquery.vm
+END
+historyData.vm
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/fgroup/!svn/ver/60/platform/src/main/webapp/WEB-INF/view/historyData.vm
+END
+datarecord.vm
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/fgroup/!svn/ver/62/platform/src/main/webapp/WEB-INF/view/datarecord.vm
+END
+main.vm
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/fgroup/!svn/ver/27/platform/src/main/webapp/WEB-INF/view/main.vm
+END
+exceptionData.vm
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/fgroup/!svn/ver/60/platform/src/main/webapp/WEB-INF/view/exceptionData.vm
+END
+404.vm
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/fgroup/!svn/ver/27/platform/src/main/webapp/WEB-INF/view/404.vm
+END
+realTimeData.vm
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/fgroup/!svn/ver/60/platform/src/main/webapp/WEB-INF/view/realTimeData.vm
+END
+dashboard.vm
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/fgroup/!svn/ver/63/platform/src/main/webapp/WEB-INF/view/dashboard.vm
+END
+sensorManager.vm
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/fgroup/!svn/ver/60/platform/src/main/webapp/WEB-INF/view/sensorManager.vm
+END
+storageManager.vm
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/fgroup/!svn/ver/60/platform/src/main/webapp/WEB-INF/view/storageManager.vm
+END
+hello.vm
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/fgroup/!svn/ver/27/platform/src/main/webapp/WEB-INF/view/hello.vm
+END
+frid_sensor.vm
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/fgroup/!svn/ver/60/platform/src/main/webapp/WEB-INF/view/frid_sensor.vm
+END
+product.vm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/fgroup/!svn/ver/60/platform/src/main/webapp/WEB-INF/view/product.vm
+END
+out.vm
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/fgroup/!svn/ver/60/platform/src/main/webapp/WEB-INF/view/out.vm
+END
+error.vm
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/fgroup/!svn/ver/27/platform/src/main/webapp/WEB-INF/view/error.vm
+END

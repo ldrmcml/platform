@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/fgroup/!svn/ver/60/platform/src/main/java/com/jtang/dao
+END
+StorageManagerDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/fgroup/!svn/ver/32/platform/src/main/java/com/jtang/dao/StorageManagerDao.java
+END
+UserManagerDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/fgroup/!svn/ver/32/platform/src/main/java/com/jtang/dao/UserManagerDao.java
+END
+SensorManagerDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/fgroup/!svn/ver/32/platform/src/main/java/com/jtang/dao/SensorManagerDao.java
+END
+InOutManagerDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/fgroup/!svn/ver/38/platform/src/main/java/com/jtang/dao/InOutManagerDao.java
+END
+ProductQueryManagerDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/fgroup/!svn/ver/62/platform/src/main/java/com/jtang/dao/ProductQueryManagerDao.java
+END
+TransRecordManagerDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/fgroup/!svn/ver/62/platform/src/main/java/com/jtang/dao/TransRecordManagerDao.java
+END
+TempManagerDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/fgroup/!svn/ver/39/platform/src/main/java/com/jtang/dao/TempManagerDao.java
+END
+StoreRecordManagerDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/fgroup/!svn/ver/62/platform/src/main/java/com/jtang/dao/StoreRecordManagerDao.java
+END
+ProductManagerDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/fgroup/!svn/ver/62/platform/src/main/java/com/jtang/dao/ProductManagerDao.java
+END
+RawmaterialManagerDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/fgroup/!svn/ver/62/platform/src/main/java/com/jtang/dao/RawmaterialManagerDao.java
+END
+ProManagerDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/fgroup/!svn/ver/60/platform/src/main/java/com/jtang/dao/ProManagerDao.java
+END

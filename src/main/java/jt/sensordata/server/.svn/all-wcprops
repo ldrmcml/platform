@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/fgroup/!svn/ver/28/platform/src/main/java/jt/sensordata/server
+END
+TopDataHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/fgroup/!svn/ver/28/platform/src/main/java/jt/sensordata/server/TopDataHandler.java
+END
+RTTempDataHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/fgroup/!svn/ver/28/platform/src/main/java/jt/sensordata/server/RTTempDataHandler.java
+END
+SendCommandHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/fgroup/!svn/ver/28/platform/src/main/java/jt/sensordata/server/SendCommandHandler.java
+END
